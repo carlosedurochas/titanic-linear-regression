@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_4" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.4">
+	<Header>
+		<Application name="SkLearn2PMML package" version="0.92.2"/>
+		<Timestamp>2023-05-20T20:23:12Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="y" optype="continuous" dataType="double"/>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="double"/>
+		<DataField name="x3" optype="continuous" dataType="double"/>
+		<DataField name="x4" optype="continuous" dataType="double"/>
+		<DataField name="x5" optype="continuous" dataType="double"/>
+		<DataField name="x6" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<RegressionModel functionName="regression" algorithmName="sklearn.linear_model._base.LinearRegression">
+		<MiningSchema>
+			<MiningField name="y" usageType="target"/>
+			<MiningField name="x1"/>
+			<MiningField name="x2"/>
+			<MiningField name="x3"/>
+			<MiningField name="x4"/>
+			<MiningField name="x5"/>
+			<MiningField name="x6"/>
+		</MiningSchema>
+		<RegressionTable intercept="0.9198186628857851">
+			<NumericPredictor name="x1" coefficient="-0.10706816833152014"/>
+			<NumericPredictor name="x2" coefficient="-0.33114714882948965"/>
+			<NumericPredictor name="x3" coefficient="-0.003911303183998531"/>
+			<NumericPredictor name="x4" coefficient="2.2887360585974328E-4"/>
+			<NumericPredictor name="x5" coefficient="-0.04058011227953873"/>
+			<NumericPredictor name="x6" coefficient="-0.0985768133118407"/>
+		</RegressionTable>
+	</RegressionModel>
+</PMML>
